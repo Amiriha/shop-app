@@ -1,10 +1,10 @@
 import { useQuery } from '@tanstack/react-query';
 import { Link } from 'react-router-dom';
-import { formatPrice, formatDate, getOrderStatusLabel, getOrderStatusColor } from '../../lib/utils';
+import { formatPrice, formatDate, getOrderStatusLabel, getOrderStatusColor } from '../lib/utils';
 import { ChevronRight, Package, CreditCard, Truck, CheckCircle, XCircle } from 'lucide-react';
-import api from '../../lib/api';
-import { Order } from '../../types';
-import { useAuthStore } from '../../store/authStore';
+import api from '../lib/api';
+import { Order } from '../types';
+import { useAuthStore } from '../store/authStore';
 
 export default function OrdersPage() {
   const { token } = useAuthStore();

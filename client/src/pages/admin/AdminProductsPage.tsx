@@ -2,10 +2,10 @@ import { useState } from 'react';
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import { Plus, Edit, Trash2, Search, ChevronLeft, ChevronRight, Loader2, Save, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import api from '../../lib/api';
-import { Product, CreateOrderData } from '../../types';
-import { formatPrice } from '../../lib/utils';
-import { useAuthStore } from '../../store/authStore';
+import api from '../lib/api';
+import { Product, CreateOrderData } from '../types';
+import { formatPrice } from '../lib/utils';
+import { useAuthStore } from '../store/authStore';
 
 export default function AdminProductsPage() {
   const { user } = useAuthStore();

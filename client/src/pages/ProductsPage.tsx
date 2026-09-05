@@ -1,8 +1,8 @@
 import { useState, useEffect, useCallback } from 'react';
 import { useQuery } from '@tanstack/react-query';
-import api from '../../lib/api';
-import { Product } from '../../types';
-import ProductList from '../../components/products/ProductList';
+import api from '../lib/api';
+import { Product } from '../types';
+import ProductList from '../components/products/ProductList';
 
 export default function ProductsPage() {
   const [page, setPage] = useState(1);

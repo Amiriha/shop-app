@@ -2,8 +2,8 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { CreditCard, CheckCircle, AlertCircle, Loader2, ArrowLeft } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import api from '../../lib/api';
-import { useAuthStore } from '../../store/authStore';
+import api from '../lib/api';
+import { useAuthStore } from '../store/authStore';
 
 export default function PaymentPage() {
   const { authority } = useParams<{ authority: string }>();

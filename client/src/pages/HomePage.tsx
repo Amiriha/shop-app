@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
 import { useQuery } from '@tanstack/react-query';
 import { ArrowRight, ShoppingCart, Truck, Shield, Headphones } from 'lucide-react';
-import api from '../../lib/api';
-import { Product } from '../../types';
+import api from '../lib/api';
+import { Product } from '../types';
 import ProductCard from '../products/ProductCard';
 
 const features = [
@@ -16,7 +16,7 @@ export default function HomePage() {
     queryKey: ['products', 'featured'],
     queryFn: async () => {
       const res = await api.get('/products?limit=8');
-      return res.data;
+      return res.data;s
     },
   });
 

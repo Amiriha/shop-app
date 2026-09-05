@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
 import { Search, ChevronLeft, ChevronRight, Truck, CheckCircle, XCircle, Clock, Package, Eye, MoreVertical } from 'lucide-react';
-import api from '../../lib/api';
+import api from '../lib/api';
 import { Order } from '../../types';
 import { formatPrice, formatDate, getOrderStatusLabel, getOrderStatusColor } from '../../lib/utils';
-import { useAuthStore } from '../../store/authStore';
+import { useAuthStore } from '../store/authStore';
 
 export default function AdminOrdersPage() {
   const { user } = useAuthStore();

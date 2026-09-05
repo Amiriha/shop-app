@@ -2,11 +2,11 @@ import { useState } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { useQuery } from '@tanstack/react-query';
 import { ShoppingCart, Heart, Share2, Truck, Shield, RotateCcw, Star, ChevronLeft, ChevronRight } from 'lucide-react';
-import api from '../../lib/api';
-import { Product } from '../../types';
-import { formatPrice } from '../../lib/utils';
-import { useCartStore } from '../../store/cartStore';
-import { useAuthStore } from '../../store/authStore';
+import api from '../lib/api';
+import { Product } from '../types';
+import { formatPrice } from '../lib/utils';
+import { useCartStore } from '../store/cartStore';
+import { useAuthStore } from '../store/authStore';
 
 export default function ProductDetailPage() {
   const { id } = useParams<{ id: string }>();

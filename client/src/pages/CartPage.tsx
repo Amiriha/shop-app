@@ -1,10 +1,10 @@
 import { Link, useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import { Plus, Minus, Trash2, ShoppingCart, ArrowLeft } from 'lucide-react';
-import { formatPrice } from '../../lib/utils';
-import { useCartStore } from '../../store/cartStore';
-import { useAuthStore } from '../../store/authStore';
-import api from '../../lib/api';
+import { formatPrice } from '../lib/utils';
+import { useCartStore } from '../store/cartStore';
+import { useAuthStore } from '../store/authStore';
+import api from '../lib/api';
 
 export default function CartPage() {
   const navigate = useNavigate();

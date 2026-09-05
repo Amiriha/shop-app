@@ -1,9 +1,9 @@
 import { useQuery } from '@tanstack/react-query';
 import { Users, Package, ShoppingCart, DollarSign, TrendingUp, ArrowUpRight, ArrowDownRight, Clock, CheckCircle, Truck, XCircle } from 'lucide-react';
-import api from '../../lib/api';
-import { Order } from '../../types';
-import { formatPrice } from '../../lib/utils';
-import { useAuthStore } from '../../store/authStore';
+import api from '../lib/api';
+import { Order } from '../types';
+import { formatPrice } from '../lib/utils';
+import { useAuthStore } from '../store/authStore';
 
 const statCards = [
   { title: 'کل کاربران', icon: Users, color: 'bg-blue-500', key: 'users' },
